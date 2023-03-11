@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/121833b321.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crad</title>
+</head>
+
+<body>
+    
+    <section>
+        <div class="container my-3 w-50">
+            <div class="row m-auto shadow rounded-5 p-5">
+                <h3>
+                    Crad System
+                </h3>
+                <label for="name" class="py-2">Name</label>
+                <input type="text" id="name" class="form-control my-3">
+
+                <label for="category" class="py-2">Category</label>
+                <input type="text" id="category" class="form-control my-3">
+
+                <label for="price" class="py-2">Price</label>
+                <input type="text" id="price" class="form-control my-3">
+
+                <label for="des py-2">Description</label>
+                <textarea name="" id="des" cols="30" rows="5" class="form-control my-3"></textarea>
+
+                <button onclick="addProduct()" class="btn btn-outline-primary w-25">Add Product</button>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container w-50 py-5 my-2">
+            <div class="row">
+                <input onkeyup="search()" type="text" id="searchpro" class="form-control my-3 " placeholder="Search">
+                <!-- <button onclick="search()" class="w-25 m-auto btn btn-outline-primary">Search</button> -->
+                <!-- <button onclick="clear()" class="w-50 my-5  btn btn-outline-primary">Search</button> -->
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row ">
+                <table class="my-3 table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Delete</th>
+                            <th>Modify</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script src="js/test.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
